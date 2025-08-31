@@ -1,0 +1,292 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f6f7fb;--text:#1f2937;--muted:#6b7280;--card:#ffffff;--border:#e5e7eb;--primary:#2563eb;--primary-ink:#fff;--shadow:0 8px 24px rgba(0,0,0,.08)}
+:root.dark{--bg:#0b0f19;--text:#e5e7eb;--muted:#9ca3af;--card:#0f1626;--border:#1f2937;--primary:#60a5fa;--primary-ink:#0b0f19;--shadow:0 8px 24px rgba(0,0,0,.3)}
+html,body{height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+/*add*/
+.roles {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.role-btn {
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 1px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.role-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.role-btn.active {
+  background: #2563eb;
+  color: white;
+}
+/*add*/
+
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--border);padding:.8rem 6%;display:flex;align-items:center;gap:1rem}
+.logo{font-weight:800}
+.logo span{color:var(--primary)}
+.navlinks{display:flex;gap:1rem;list-style:none;margin-left:auto}
+.navlinks a{color:var(--text);text-decoration:none;font-weight:600}
+.navlinks a:hover{opacity:.8}
+.toggle,.menu{margin-left:.5rem;border:1px solid var(--border);background:transparent;padding:.35rem .6rem;border-radius:.6rem;cursor:pointer}
+.menu{display:none}
+.drawer{display:flex;flex-direction:column;gap:.8rem;background:var(--card);border-bottom:1px solid var(--border);padding:1rem 6%}
+.hidden{display:none!important}
+
+/* Sections */
+.section{padding:3rem 6%}
+.section h2{font-size:1.8rem;margin-bottom:.6rem}
+.section-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem}
+.muted{color:var(--muted)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
+.hero h1{font-size:2.2rem;margin-bottom:.4rem}
+.hero h2{color:var(--primary);min-height:1.8rem}
+.cta{display:flex;gap:.6rem;margin:1rem 0}
+.badges{display:flex;gap:.4rem;flex-wrap:wrap}
+.badges span{border:1px solid var(--border);padding:.25rem .6rem;border-radius:999px;font-size:.8rem;color:var(--muted)}
+.frame{background:var(--card);border:1px solid var(--border);border-radius:1rem;box-shadow:var(--shadow);padding:1rem}
+.frame-title{font-weight:700;margin-bottom:.4rem}
+.frame iframe{width:100%;height:320px;border:none;border-radius:.6rem;background:#eef2ff}
+.hint{font-size:.8rem;color:var(--muted);margin-top:.4rem}
+
+/* Filters */
+.filters{display:flex;gap:.5rem}
+.filters input,.filters select{padding:.5rem .7rem;border:1px solid var(--border);border-radius:.6rem;background:transparent;color:var(--text)}
+
+
+
+
+
+/* Cards grid */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.7rem;}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap}
+.tag{font-size:.75rem;background:#dbeafe;color:#1e40af;border:1px solid #bfdbfe;border-radius:999px;padding:.15rem .5rem}
+.actions{display:flex;gap:.4rem;flex-wrap:wrap}
+.btn{border:1px solid var(--border);background:transparent;padding:.45rem .8rem;border-radius:.6rem;text-decoration:none;color:var(--text);cursor:pointer}
+.btn:hover{opacity:.85}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-ink);}
+
+* Internship Section */
+#internship {
+  padding: 60px 20px;
+  background-color: var(--background); /* ✅ dynamic background */
+  transition: background-color 0.3s ease;
+}
+
+#internship h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--primary); /* ✅ uses theme variable */
+}
+
+/* Internship Card */
+.internship-card {
+  background: var(--card); /* ✅ dynamic card color */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.internship-card:hover {
+  transform: scale(1.02);
+}
+
+.internship-card h3 {
+  color: var(--text); /* ✅ adapts to dark mode */
+  margin-bottom: 8px;
+}
+
+.internship-card p {
+  margin: 5px 0;
+  color: var(--text-light); /* ✅ readable in both modes */
+}
+
+.internship-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: var(--text);
+}
+/* Dashboards Section */
+#dashboards {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Heading Style */
+#dashboards h2 {
+  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+#dashboards .muted {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Dashboard Grid */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dashboard Frame */
+.frame {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.frame:hover {
+  transform: scale(1.03);
+}
+
+/* Dashboard Images */
+.dash-img,
+.dashboard-img {
+  width: 100%;
+  height: 260px;  /* Fixed height for equal frames */
+  object-fit: cover; /* Ensures images don't stretch */
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dash-img:hover,
+.dashboard-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .dash-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dash-img,
+  .dashboard-img {
+    height: auto; /* Allow auto height on small screens */
+  }
+}
+
+/* Dashboard grid */
+.dash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem;margin-top:1rem}
+
+/* Research Section */
+#research {
+  padding: 50px 20px;
+}
+
+#research h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+#research .muted {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Research Grid Layout */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+/* Research Card */
+.research-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Research Title */
+.research-card h3 {
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+/* Research Description */
+.research-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* View PDF Button */
+.view-pdf {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.view-pdf:hover {
+  background-color: #1e40af;
+}
+
+/* Contact */
+.contact{list-style:none;display:grid;gap:.4rem;margin-top:.6rem}
+.contact a{color:var(--text)}
+
+/* Footer */
+.footer{text-align:center;padding:1.2rem;border-top:1px solid var(--border);color:var(--muted)}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:1rem}
+.modal-card{width:min(860px,96%);background:var(--card);border:1px solid var(--border);border-radius:1rem;box-shadow:var(--shadow);overflow:hidden}
+.modal-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);padding:.8rem 1rem}
+.modal-body{padding:1rem}
+.modal-body iframe,.modal-body video{width:100%;height:60vh;border:none;border-radius:.6rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .navlinks{display:none}
+  .menu{display:block;margin-left:auto}
+}

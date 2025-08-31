@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kumar's Data Analyst Portfolio showcasing dashboards, projects, and case studies." />
+  <title>NirmalKumar V</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+ 
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">NirmalKumar V <br>
+      <span>Data Analyst -</span> 
+      <span>Cloud Enthusiast -</span>
+    <span>Developer</span>
+  </div>
+    <ul class="navlinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internship">Internships</a></li> 
+      <li><a href="#dashboards">Dashboards</a></li>
+      <!-- <li><a href="#notebooks">Notebooks</a></li> -->
+      <li><a href="#research">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle" class="toggle">🌙</button>
+    <button id="mobileMenu" class="menu">☰</button>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="drawer" class="drawer hidden">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internships</a>
+    <a href="#dashboards">Dashboards</a>
+    <!-- <a href="#notebooks">Notebooks</a> -->
+      <a href="#research">Publications</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="hero section">
+    <div class="hero-left">
+      <h1>Hi, I'm NirmalKumar 👋</h1>
+      <h2 id="roles"></h2>
+      <p>I turn raw data into insights using <strong>Python</strong>, <strong>SQL</strong>, <strong>Power BI</strong>, and <strong>Tableau</strong>.</p>
+      
+      <div class="cta">
+        <a class="btn primary" href="assets/NirmalKumar V-Resume.pdf" download>📄 Download Resume</a>
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+      <div class="badges">
+        <span>Open to Work</span>
+        <span>Remote/On-site</span>
+        <!-- <span>IST (UTC+5:30)</span> -->
+      </div>
+    </div>
+    <!--add-->
+     <div class="roles">
+  <button class="role-btn active" data-role="data">Data Analyst</button>
+  <button class="role-btn" data-role="cloud">Cloud Enthusiast</button>
+  <button class="role-btn" data-role="dev">Developer</button>
+</div>
+
+
+
+
+<!-- Projects Section -->
+<section id="portfolio" class="section">
+  <!-- <h2>Professional Portfolio</h2> -->
+  <div id="roleContent"></div>
+</section>
+
+    <div class="hero-right">
+      <div class="card">
+        <p class="card-title"><strong>Additional Skills</strong> </p>
+         <!-- <p class="muted">Complementary tools and technologies used across my projects</p> -->
+
+  <!-- <div class="skills-grid"> -->
+    <!-- Card 1 -->
+    <div class="card skill-card">
+      <!-- <p class="card-title"><strong>Programming & Scripting</strong></p> -->
+      <div class="skills-list">
+        <span class="skill-badge">Artificial Intelligence</span> <br>
+        <span class="skill-badge">Github</span> <br>
+        <span class="skill-badge">Visual Studio Code</span> <br>
+        <span class="skill-badge">Google Colab Notebook</span><br>
+        <span class="skill-badge">Jupyter Notebook</span><br>
+       
+      </div>
+    </div>
+
+        <!-- Replace src with your Power BI/Tableau Public embed link -->
+        <!-- <iframe title="Featured Dashboard" src="" allowfullscreen></iframe> -->
+        <!-- <p class="hint">Paste your public Power BI/Tableau embed URL into the iframe's src.</p> -->
+      <!-- </div> -->
+    </div>
+  </section>
+
+  
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="section-head">
+     <h2> Projects </h2>
+      <div class="filters">
+        <input id="search" placeholder="Search projects..." />
+        <select id="tagFilter">
+          <option value="all">All Tags</option>
+        </select>
+      </div>
+    </div>
+    <div id="projectCards" class="cards"></div>
+  </section>
+
+  <!-- 🏢 Internship Section -->
+<section id="internship" class="section">
+  <h2>Internship Experience</h2>
+
+  <div class="internship-card">
+    <h3>DATA ANALYTICS WITH PYTHON </h3>
+    <p><strong>Duration:</strong> May 2025 – June 2025  </p>
+    <p><strong>Tools & Technologies Used:</strong> Anaconda, Spyder, Python</p>
+    <p><strong>Projects Done :</strong> California House Price Prediction</p>
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Performed data cleaning, preprocessing, and exploratory data analysis (EDA) using Pandas, NumPy, and Matplotlib.</li>
+      <li>Implemented an inbuilt California House Price Prediction model using Scikit-learn regression techniques.</li>
+      <li>Visualized insights and model results through graphs and plots for better interpretation.</li>
+    </ul>
+  </div>
+   <div class="internship-card">
+    <h3>ARTIFICIAL INTELLIGENCE</h3>
+    <p><strong>Duration:</strong> Sep 2024 – Oct 2024</p>
+    <p><strong>Tools & Technologies Used:</strong>Jupyter Notebook, Python </p>
+     <p><strong>Projects Done :</strong> Cardiovascular Disease Prediction</p>
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Performed data cleaning, preprocessing, and exploratory analysis to prepare the cardiovascular dataset for modeling.</li>
+      <li>Developed and trained classification models using Logistic Regression and Random Forest to predict cardiovascular disease risk.</li>
+      <li>Evaluated model performance and visualized results using Matplotlib and Seaborn for actionable healthcare insights.</li>
+    </ul>
+  </div>
+</section>
+  <!-- Dashboards -->
+  <section id="dashboards" class="section">
+    <h2>Interactive Dashboards</h2>
+    <p class="muted"></p>
+    <div class="dash-grid">
+      <div class="frame">
+        <h3>Monthly Sale Report Using Real-Time data</h3>
+        <img src="assets/images/monthlysale .jpg" alt="Dashboard" class="dash-img" />
+        <!-- <iframe title="Power BI Sales" src="" allowfullscreen></iframe> -->
+      </div>
+      <div class="frame">
+        <h3>Students Performance Report</h3>
+        <!-- <iframe title="Tableau Churn" src="" allowfullscreen></iframe> -->
+         <img src="assets/images/dashboard.jpg" alt="Power BI Dashboard" class="dashboard-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Publications Section -->
+<section id="research" class="section">
+  <h2>Research & Publications</h2>
+  <p class="muted"></p>
+
+  <div class="research-grid" id="researchList">
+    <!-- Research items will be dynamically added from script.js -->
+  </div>
+</section>
+
+
+  <!-- Notebooks
+  <section id="notebooks" class="section">
+    <h2>Python notebooks</h2>
+    <p class="muted">Links open notebooks on GitHub or Kaggle in a new tab.</p>
+    <div id="nbList" class="cards"></div>
+  </section> -->
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <ul class="contact">
+      <li>📧 <a id="emailLink" href="mailto:nirmalkumarv210404@gmail.com">nirmalkumarv210404@gmail.com</a></li>
+        <li>📞 <a id="number" href="callto:9677749496">9677749496</a></li>
+      <li> 🖇️<a href="https://www.linkedin.com/in/nirmalkumar-v 98a09a24a" target="_blank" rel="noreferrer">LinkedIn</a></li>
+      <li>💼 <a href="https://github.com/VNirmalkumar" target="_blank" rel="noreferrer">GitHub</a></li>
+     <!-- <li>📊 <a href="https://www.novypro.com/" target="_blank" rel="noreferrer">Power BI (NovyPro)</a> · <a href="https://public.tableau.com/" target="_blank" rel="noreferrer">Tableau Public</a></li> -->
+    </ul>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> · NirmalKumar.V-Portfolio· 
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h4 id="modalTitle"></h4>
+        <button id="modalClose" class="btn">✕</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+</body>
+</html>
