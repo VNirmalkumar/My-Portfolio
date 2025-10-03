@@ -163,7 +163,7 @@ const projects = [
     title: "Monthly Sales Report using Real-time data",
     summary: "A dynamic reporting system that fetches, processes, and visualizes monthly sales data in real-time.",
     tags: ["Excel","Data Cleaning","ETL", "Power BI"," Data Visualization"],
-    repo: "https://github.com/youruser/global-unemployment-analysis",
+    repo: "https://github.com/VNirmalkumar/Monthly-Sales-Dashboard-Using-Real-Time-Dataset",
     //caseStudy: "docs/global-unemployment-case-study.pdf",
     //demo: { type: "iframe", src: "" } // paste Power BI/Tableau embed URL
   },
@@ -171,7 +171,7 @@ const projects = [
     title: "Students Performance Report",
     summary: "The goal is to identify patterns that affect academic success and help educators in making data-driven decisions.",
     tags: ["Excel","Data Cleaning", "ETL","Power BI"," Data Visualization", "DAX Query"],
-    repo: "https://github.com/youruser/global-unemployment-analysis",
+    repo: "https://github.com/VNirmalkumar/Students-Performance-Report-Using-PowerBI",
     //caseStudy: "docs/global-unemployment-case-study.pdf",
     //demo: { type: "iframe", src: "assets/Images/dashboard.jpg" } // paste Power BI/Tableau embed URL
   },
