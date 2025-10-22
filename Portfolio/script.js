@@ -16,12 +16,14 @@ const data = {
   skills: {
     data: ["PYTHON", "EXCEL","POWER BI", "TABLEAU", "SQL","MONGO DB","DAX"],
     cloud: ["AWS", "CLOUD COMPUTING","INFORMATION SECURITY", "S3"],
-    dev: ["C","PYTHON","APP DEVELOPMENT","HTML", "CSS", "JavaScript", "PHP","MySql",]
+    dev: ["C","PYTHON","APP DEVELOPMENT","HTML", "CSS", "JavaScript", "MySql",]
   },//Additional skills are ai,ml,data mining,hadoop
   
   certificates: {
     data: [
-     
+      { name: "Power BI for Beginners ", file: "docs/Power BI Certificate.pdf" },
+      { name: "Introduction to MS Excel ", file: "docs/Excel Certificate.pdf" },
+      { name: "SQL for Data Analysis ", file: "docs/SQL for data analysis.pdf" },
       { name: "Introduction to Python ", file: "docs/sololearn python.pdf" },
       { name: "Python for Data Science ", file: "docs/python datascience.pdf" },
       { name: "Data Science 101", file: "docs/ibmdatascience.pdf" },
