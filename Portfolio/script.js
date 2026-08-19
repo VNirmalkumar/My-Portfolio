@@ -162,6 +162,14 @@ const rolesEl = document.getElementById("roles");
 // Portfolio data (edit these arrays)
 const projects = [
   {
+    title: "Crypto Price Analytics and Volatility Insights",
+    summary: "Developed a Python-based analytical system to fetch and analyze cryptocurrency data. Calculated daily returns,annual volatility, and generated visual insights to understand price fluctuations in Bitcoin and Ethereum.",
+    tags: ["Yfinance","CSV","Data Cleaning","ETL", "Python"," Data Visualization"],
+    repo: "https://github.com/VNirmalkumar/Monthly-Sales-Dashboard-Using-Real-Time-Dataset",
+    //caseStudy: "docs/global-unemployment-case-study.pdf",
+    //demo: { type: "iframe", src: "" } // paste Power BI/Tableau embed URL
+  },
+  {
     title: "Monthly Sales Report using Real-time data",
     summary: "A dynamic reporting system that fetches, processes, and visualizes monthly sales data in real-time.",
     tags: ["Excel","Data Cleaning","ETL", "Power BI"," Data Visualization"],
